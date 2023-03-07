@@ -1,0 +1,76 @@
+@media (min-width: 0px) {
+  .card-two {
+    width: 100px;
+    min-height: 100px;
+    margin: 10px;
+    font-size: 50px;
+  }
+
+  .card-four {
+    width: 67px;
+    min-height: 67px;
+    font-size: 40px;
+  }
+
+  .card-six {
+    width: 46px;
+    min-height: 46px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 580px) {
+  .start__container {
+    padding: 0 3px;
+  }
+
+  .container {
+    padding: 0 3px;
+  }
+
+  .card-wrapper {
+    padding: 3px;
+  }
+
+  .card-eight {
+    width: 35px;
+    min-height: 35px;
+    margin: 1px;
+    font-size: 20px;
+  }
+
+  .card--wait .card-eight {
+    box-shadow: 1px 1px 5px var(--gold);
+  }
+
+  .card--true .card-eight {
+    box-shadow: 1px 1px 5px var(--green);
+  }
+
+  .card--false .card-eight {
+    box-shadow: 1px 1px 5px var(--green);
+  }
+
+  .card-ten {
+    width: 28px;
+    min-height: 28px;
+    margin: 1px;
+    font-size: 15px;
+  }
+
+  .card--wait .card-ten {
+    box-shadow: 0 0 3px var(--gold);
+  }
+
+  .card--true .card-ten {
+    box-shadow: 0 0 3px var(--green);
+  }
+
+  .card--false .card-ten {
+    box-shadow: 0 0 3px var(--red);
+  }
+
+  .button {
+    transform: translateY(180px);
+  }
+}
