@@ -1,3 +1,5 @@
-This is Pairs Game!
+# This is a Pairs Game
 
-<a href="https://tertiomodo.github.io/pairs-game" target="_blank">Start</a>
+My pet project which was wrote in pure JavaScript.
+
+<a href="https://tertiomodo.github.io/pairs-game" target="_blank">Find all pairs if you can!</a>

@@ -1,5 +1,5 @@
 .body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   background-color: var(--dark-blue);
 }
 
@@ -56,12 +56,12 @@
   padding: 5px;
   text-shadow: var(--dirty-yellow) 1px 1px 1px;
   background-color: var(--sand-yellow);
-  border: 1px solid var(--dirty-yellow);;
+  border: 1px solid var(--dirty-yellow);
   border-radius: 5px;
 }
 
-.start__input[type=number]::-webkit-inner-spin-button,
-.start__input[type=number]::-webkit-outer-spin-button {
+.start__input[type="number"]::-webkit-inner-spin-button,
+.start__input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
@@ -240,4 +240,3 @@
 .card-wrapper--pulse {
   animation: animation 1s alternate ease-in-out infinite;
 }
-
