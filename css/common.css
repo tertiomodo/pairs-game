@@ -1,0 +1,60 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+.body {
+  font-family: "Montserrat";
+  background-color: var(--dark-blue);
+}
+
+@keyframes animation {
+  0% {
+    box-shadow: 0px 0px 1px #3ddb2b;
+  }
+
+  10% {
+    box-shadow: 0px 0px 2px #3ddb2b;
+  }
+
+  20% {
+    box-shadow: 0px 0px 4px #3ddb2b;
+  }
+
+  30% {
+    box-shadow: 0px 0px 6px #3ddb2b;
+  }
+
+  40% {
+    box-shadow: 0px 0px 8px #3ddb2b;
+  }
+
+  50% {
+    box-shadow: 0px 0px 10px #3ddb2b;
+  }
+
+  60% {
+    box-shadow: 0px 0px 12px #3ddb2b;
+  }
+
+  70% {
+    box-shadow: 0px 0px 14px #3ddb2b;
+  }
+
+  80% {
+    box-shadow: 0px 0px 16px #3ddb2b;
+  }
+
+  90% {
+    box-shadow: 0px 0px 18px #3ddb2b;
+  }
+
+  100% {
+    box-shadow: 0px 0px 20px #3ddb2b;
+  }
+}

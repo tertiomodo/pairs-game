@@ -1,5 +1,6 @@
-@import "normalize.css";
 @import "fonts.css";
-@import "variable.css";
-@import "style.css";
+@import "variables.css";
+@import "common.css";
+@import "startPage.css";
+@import "gamePage.css";
 @import "media.css";
