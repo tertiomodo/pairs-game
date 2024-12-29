@@ -9,7 +9,8 @@
     return array;
   }
 
-  // Создаём функцию перемешивания массива.Функция принимает в аргументе исходный массив и возвращает перемешанный массив. arr - массив чисел
+  // Создаём функцию перемешивания массива.
+  // Функция принимает в аргументе исходный массив и возвращает перемешанный массив. arr - массив чисел
   function shuffle(arr) {
     let length = arr.length;
     let a = null;
@@ -21,6 +22,7 @@
       arr[length] = arr[b];
       arr[b] = a;
     }
+
     return arr;
   }
 
@@ -35,6 +37,7 @@
     // Создаём DOM элементы
     const container = document.createElement("div");
     const cardWrapper = document.createElement("div");
+    const cardContainer = document.createElement("div");
 
     // Кнопка повторного запуска игры
     const button = document.createElement("button");
@@ -58,25 +61,26 @@
         const card = document.createElement("div");
         card.classList.add("card");
 
+        // Возможно это не нужно
         // Проверка count и применение соответствующих стилей в зависимости от количества карточек
-        switch (count) {
-          case 2:
-            card.classList.add("card-two");
-            button.classList.add("button--exception");
-            break;
-          case 4:
-            card.classList.add("card-four");
-            break;
-          case 6:
-            card.classList.add("card-six");
-            break;
-          case 8:
-            card.classList.add("card-eight");
-            break;
-          case 10:
-            card.classList.add("card-ten");
-            break;
-        }
+        // switch (count) {
+        //   case 2:
+        //     card.classList.add("card-two");
+        //     button.classList.add("button--exception");
+        //     break;
+        //   case 4:
+        //     card.classList.add("card-four");
+        //     break;
+        //   case 6:
+        //     card.classList.add("card-six");
+        //     break;
+        //   case 8:
+        //     card.classList.add("card-eight");
+        //     break;
+        //   case 10:
+        //     card.classList.add("card-ten");
+        //     break;
+        // }
         // Добавляем div карты в массив cardsArray
         cardsArray.push(card);
 
@@ -98,12 +102,14 @@
 
     document.body.classList.add("body");
     container.classList.add("container");
+    cardContainer.classList.add("card-container");
     cardWrapper.classList.add("card-wrapper");
     button.classList.add("button");
     transparent.classList.add("transparent");
 
     document.body.append(container);
-    container.append(cardWrapper);
+    cardContainer.append(cardWrapper);
+    container.append(cardContainer);
     container.append(button);
     document.body.append(transparent);
 
@@ -194,7 +200,6 @@
     });
   }
 
-  // Вызов функции создания игры после загрузки DOM
   document.addEventListener("DOMContentLoaded", () => {
     const count = localStorage.getItem("count");
     startGame(count);

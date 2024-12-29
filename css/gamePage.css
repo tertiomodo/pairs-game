@@ -1,0 +1,118 @@
+.container {
+  max-width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px;
+  user-select: none;
+}
+
+.card-container {
+  width: 90vmin;
+  height: 90vmin;
+  padding: 2px;
+  background: linear-gradient(148.42deg, #333333 13.56%, #111111 80.96%);
+  border-radius: 10px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: radial-gradient(100.15% 191.04% at 15.32% 0%, #171717 0%, #101010 66.17%);
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card-stack {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.card-stack:not(:last-child) {
+  margin-bottom: 2%;
+}
+
+.card-stack .card:not(:last-child) {
+  margin-right: 2%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 21px;
+  font-weight: 600;
+  color: transparent;
+  background-color: #2c2c2c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: color 0.05s ease-in-out, box-shadow 0.05s ease-in-out;
+}
+
+.card--wait {
+  color: #fff;
+  border: 1px solid var(--gold);
+}
+
+.card--false {
+  color: #fff;
+  border: 1px solid var(--red);
+}
+
+.card--true {
+  color: #fff;
+  border: 1px solid var(--green);
+}
+
+.transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.transparent--active {
+  z-index: 1;
+}
+
+.button {
+  display: none;
+  position: absolute;
+  z-index: -2;
+  padding: 3px 9px;
+  visibility: hidden;
+  transform: translateY(253px);
+  font-size: 15px;
+  text-shadow: var(--dirty-yellow) 1px 1px 1px;
+  background-color: var(--sand-yellow);
+  border-top: 2px solid var(--light-yellow);
+  border-right: 2px solid var(--dirty-yellow);
+  border-bottom: 2px solid var(--dirty-yellow);
+  border-left: 2px solid var(--light-yellow);
+  animation: animation 1s alternate ease-in-out infinite;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button--active {
+  display: block;
+  visibility: visible;
+  z-index: 3;
+}

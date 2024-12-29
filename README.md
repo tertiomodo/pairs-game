@@ -1,4 +1,4 @@
-# This is a Pairs Game
+# This is the Pairs Game
 
 My pet project which was wrote in pure JavaScript.
 
